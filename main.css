@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: Open Sans, sans-serif;
     src: url(fonts/opensans-light.woff2),
     url(fonts/opensans-light.woff);
     font-style: normal;         /*каким образом шрифт должен быть стилизирован*/
@@ -8,7 +8,7 @@
     font-display: swap;  /*swap сообщает браузеру, что текст, использующий шрифт, должен немедленно отображаться с использованием системного шрифта. Когда пользовательский шрифт готов, он заменяет системный шрифт*/
 }
 @font-face {
-    font-family: "Open Sans";
+    font-family: Open Sans, sans-serif;
     src: url(fonts/opensans-regular.woff2),
     url(fonts/opensans-regular.woff);
     font-style: normal;         /*каким образом шрифт должен быть стилизирован*/
@@ -16,7 +16,7 @@
     font-display: swap;  /*swap сообщает браузеру, что текст, использующий шрифт, должен немедленно отображаться с использованием системного шрифта. Когда пользовательский шрифт готов, он заменяет системный шрифт*/
 }
 @font-face {
-    font-family: "Gilroy";
+    font-family: Gilroy, sans-serif;
     src: url(fonts/gilroy-light.woff2),
     url(fonts/gilroy-light.woff);
     font-style: normal;         /*каким образом шрифт должен быть стилизирован*/
@@ -24,7 +24,7 @@
     font-display: swap;  /*swap сообщает браузеру, что текст, использующий шрифт, должен немедленно отображаться с использованием системного шрифта. Когда пользовательский шрифт готов, он заменяет системный шрифт*/
 }
 @font-face {
-    font-family: "Gilroy";
+    font-family: Gilroy, sans-serif;
     src: url(fonts/gilroy-extra-bold.woff2),
     url(fonts/gilroy-extra-bold.woff);
     font-style: normal;         /*каким образом шрифт должен быть стилизирован*/
@@ -124,10 +124,40 @@ legend {
 	display: block;
 }
 
-/* Обнуление стилей (конец) */
+/*--------------Обнуление стилей (конец)/*-------------- */
 
-/* sans-serif - шрифты без засечек  */
+ /*--------------Шрифты (начало)-------------- */
 
+ /*--------------шрифты-------------- */
+
+
+ .search-input, .search-button, .user-account, .user-list{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+ .submenu{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.catalog-link, .navigation-list, navigation-contacts, .navigation-contacts{
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+  /*--------------Шрифты (конец)-------------- */
+
+
+
+ /*--------------ХЕДЕР (начало)-------------- */
+ 
 .container{
     max-width: 1180px;
     margin: 0 auto;
@@ -185,3 +215,43 @@ legend {
     display: flex;
     align-items: center;
 }
+
+
+
+
+ /*--------------Меню с Каталогом товаров (начало)-------------- */
+
+.navigation {
+    /* display: flex; */
+}
+
+.catalog-link {
+}
+.catalog-menu {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 50px;
+    /* padding: 30px 0 0 60px; */
+}
+.submenu {
+}
+
+.submenu-item {
+}
+.submenu-link {
+}
+.navigation-list {
+    display: flex;
+}
+
+.navigation-list :first-child {
+    display: block;
+    margin-right: 40px;
+}
+
+.nav-link {
+}
+.navigation-contacts {
+}
+
+ /*--------------ХЕДЕР (конец)------------- */
