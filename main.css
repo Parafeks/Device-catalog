@@ -162,11 +162,17 @@ legend {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 20px;
+
+    border: 1px solid black;
+
 }   
 .header{
     min-height: 185px;
     background-color: #f7e296;
     margin: 40px 0px 45px 0px;
+
+    /* border: 1px solid rgb(237, 43, 43); */
+
 }
 
 .header-container {   
@@ -174,7 +180,10 @@ legend {
     max-width: 1040px;
     margin: 0 auto;
     padding-top: 50px;
-    padding-bottom: 50px; 
+    padding-bottom: 45px; 
+
+    border: 1px solid rgb(230, 50, 206);
+
 }
 
 .header-logo_link {
@@ -186,6 +195,7 @@ legend {
 .header-logo_link:hover {
     opacity: 0.6;
 }
+
 .header-logo_link:active{
     opacity: 0.3;
 }
@@ -195,6 +205,24 @@ legend {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
+/*--------------Поиск (начало)-------------- */
+
+.search{
+    border: 1px solid black;
+
+}
+.search-label{
+    display: inline-block;
+    background-image: url('images/search.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat:no-repeat;
+}
+
+
+/*--------------Поиск (конец)-------------- */
+
 
 .user-account {
     display: flex;
@@ -222,29 +250,77 @@ legend {
  /*--------------Меню с Каталогом товаров (начало)-------------- */
 
 .navigation {
-    /* display: flex; */
+   position: relative;
 }
 
-.catalog-link {
+.catalog-link{
+    position: relative;
 }
-.catalog-menu {
+
+.catalog-link::after {
+    position: absolute;
+    content: "";
+    background: url(images/plus.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    top: 2px;
+
+    opacity: 0.6;
+}
+
+.catalog-link:hover +.catalog-menu{
     display: flex;
-    align-items: flex-start;
-    column-gap: 50px;
-    /* padding: 30px 0 0 60px; */
 }
+
+.catalog-menu:hover{
+    display: flex;
+}
+
+
+.catalog-menu{
+    width: 1040px;
+    z-index: 3;
+    background-color: #f7e296;
+
+    display: none;    
+}
+
 .submenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    width: 593px;
+    height: 135px;
+
+    padding-top: 25px;
 }
 
 .submenu-item {
 }
-.submenu-link {
+
+.submenu-item:nth-child(6){
+    opacity: 0;
 }
-.navigation-list {
-    display: flex;
+.submenu-item:nth-child(8){
+    opacity: 0;
+}
+.submenu-item:nth-child(9){
+    opacity: 0;
 }
 
-.navigation-list :first-child {
+.submenu-link {
+}
+
+.navigation-list {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 520px;
+}
+
+.navigation-list li:first-child {
     display: block;
     margin-right: 40px;
 }
@@ -252,6 +328,69 @@ legend {
 .nav-link {
 }
 .navigation-contacts {
+    position: absolute;
+    top: 0px;
+    left: 920px;
 }
 
- /*--------------ХЕДЕР (конец)------------- */
+/*--------------ХЕДЕР (конец)------------- */
+
+
+/*--------------MEIN (начало)------------- */
+/*--------------Крошки (начало)------------- */
+
+.main {
+}
+.crumbs {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 45px; 
+
+    border: 1px solid rgb(83, 232, 37);
+
+}
+.title {
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+}
+.crimbs-list {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.crumbs-item{
+    margin-right: 20px;
+    opacity: .3;
+}
+
+.crumbs-item:not(:last-child):after{
+    content: "";
+    display: inline-block;
+    background-image: url(images/nav-arrow.svg);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 7px;
+    margin-left: 20px;
+
+    opacity: 1;
+}
+.crumbs-link {
+}
+/*--------------Крошки (конец)------------- */
+
+
+
+
+
+
+ /*--------------MEIN (конец)------------- */
+
+
