@@ -70,25 +70,113 @@
                 </div>
             </div>                      
         </header>
+    </div>
+    <main class="main">
+        <div class="crumbs">
+            <h1 class="title">Моноподы для селфи</h1>
+            <ul class="crimbs-list">
+                <li class="crumbs-item"><a href="#" class="crumbs-link">Главная</a></li>
+                <li class="crumbs-item"><a href="#" class="crumbs-link">Каталог товаров</a></li>
+                <li class="crumbs-item"><a href="#" class="crumbs-link">Моноподы для селфи</a></li>
+            </ul>
+        </div>
+
         
-        <main class="main">
-            <div class="crumbs">
-                <h1 class="title">Моноподы для селфи</h1>
-                <ul class="crimbs-list">
-                    <li class="crumbs-item"><a href="#" class="crumbs-link">Главная</a></li>
-                    <li class="crumbs-item"><a href="#" class="crumbs-link">Каталог товаров</a></li>
-                    <li class="crumbs-item"><a href="#" class="crumbs-link">Моноподы для селфи</a></li>
-                </ul>
+        <div class="filtr-container">  
+            <div class="filtr-block">
+                <div class="filtr-title"><h3>Фильтр:</h3></div>
+                <div class="cost-container">
+                    <div class="line"></div>
+                    <div class="cost">
+                        <p>Стоимость</p>
+                        <div class="scale">
+                            <div class="bar-green"></div>
+                            <div class="bar-grey"></div>
+                            <div class="toggle min">
+                                <div class="point"></div>
+                            </div>
+                            <div class="toggle max"></div>
+                        </div>
+                        <div class="cost-value">
+                            <label class="scale-label">от
+                                <input type="text" class="scale-input" name="from-price" value="0">
+                            </label>
+                            <label class="scale-label">до
+                                <input type="text" class="scale-input" name="to-price" value="15 000">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="color">
+                        <p>Цвет</p>
+                        <ul class="color-list">
+                            <li class="color-item">
+                                <input class="checkbox-input" type="checkbox" name="check1" id="black" checked>
+                                <label for="black" class="checkbox-label">Черный</label>
+                            </li>
+                            <li class="color-item">
+                                <input class="checkbox-input" type="checkbox" name="check2" id="white" >
+                                <label for="white" class="checkbox-label">Белый</label>
+                            </li>
+                            <li class="color-item">
+                                <input class="checkbox-input" type="checkbox" name="check3" id="blue" checked>
+                                <label for="blue" class="checkbox-label">Синий</label>
+                            </li>
+                            <li class="color-item">
+                                <input class="checkbox-input" type="checkbox" name="check4" id="red" checked>
+                                <label for="red" class="checkbox-label">Красный</label>
+                            </li>
+                            <li class="color-item">
+                                <input class="checkbox-input" type="checkbox" name="check5" id="pink" >
+                                <label for="pink" class="checkbox-label">Розовый</label>
+                            </li>
+                        </ul>
+                    </div>    
+                    <div class="line"></div>
+                    <div class="bluetooth">
+                        <p>Bluetooth</p>
+                        <ul class="bluetooth-list">
+                            <li class="bluetooth-item">
+                                <input class="radio-input" type="radio" name="bluetooth" id="yes" checked>
+                                <label class="radio-label" for="yes">Есть</label>
+                            </li>
+                            <li class="bluetooth-item">
+                                <input class="radio-input" type="radio" name="bluetooth" id="no">
+                                <label class="radio-label" for="no">Нет</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="show-btn">Показать</a>
+                    
+
+                </div>
             </div>
 
-        </main>
-    </div>
+        </div>
+
+
+        <!-- <div class="sort">
+            <h3>Сортировка:</h3>
+
+            <ul class="sort-list">
+                <li class="sort-item"><a href="#" class="sotr-link">По цене</a></li>
+                <li class="sort-item"><a href="#" class="sotr-link">По типу</a></li>
+                <li class="sort-item"><a href="#" class="sotr-link">По популярности</a></li>
+            </ul>
+
+            <ul class="arrow-list">
+                <li class="arrow-item"><a href="#" class="arrow-link">
+                    <img src="images/arrow-up.svg" alt="Сортировка вниз" class="arrow">
+                </a></li>
+                <li class="arrow-item"><a href="#" class="arrow-link">
+                    <img src="images/arrow-down.svg" alt="Сортировка вверх" class="arrow">
+                </a></li>
+            </ul>
+        </div> -->
+
+    </main>
     
 </body>
 </html>
 
-
-<!-- <li class="crumbs-item">
-    <p class="crumbs-text">Главная</p>
-    <a href="#" class="crumbs-link"><img class="arrow" src="images/nav-arrow.svg" alt=""></a>
-</li> -->

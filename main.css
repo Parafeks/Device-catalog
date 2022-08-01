@@ -182,7 +182,7 @@ legend {
     padding-top: 50px;
     padding-bottom: 45px; 
 
-    border: 1px solid rgb(230, 50, 206);
+    /* border: 1px solid rgb(230, 50, 206); */
 
 }
 
@@ -283,7 +283,11 @@ legend {
     z-index: 3;
     background-color: #f7e296;
 
-    display: none;    
+    display: none;  
+    /* position: absolute;   */
+
+    /* border: 1px solid rgb(243, 49, 6); */
+
 }
 
 .submenu {
@@ -347,7 +351,7 @@ legend {
     padding-top: 50px;
     padding-bottom: 45px; 
 
-    border: 1px solid rgb(83, 232, 37);
+    /* border: 1px solid rgb(83, 232, 37); */
 
 }
 .title {
@@ -385,6 +389,285 @@ legend {
 .crumbs-link {
 }
 /*--------------Крошки (конец)------------- */
+/*--------------Фильтр (начало)------------- */
+/*--------------стоимость (начало)------------- */
+
+
+.filtr-title h3{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+/* .sort h3{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+} */
+
+
+.filtr-container {
+    width: 468px;
+    height: 1286px;
+
+    background: linear-gradient(
+    #dbdbdb 0%, #dbdbdb 5%,
+    #eeeeee 5%, #eeeeee 100%
+  );
+}
+
+.filtr-block{
+    /* width: 203px; */
+    margin-left: 200px;
+   
+    /* border: 1px solid rgb(26, 6, 243); */
+}
+
+.filtr-title{
+    padding: 20px 0px 20px 0px;
+}
+
+.line { 
+    width: 201px;
+    height: 2px;
+    background-color: black;
+}
+
+.cost-container{
+    margin-top: 70px;
+
+}
+
+.cost {
+    padding-top: 16px;
+}
+
+.cost p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+
+    margin-bottom: 30px;
+}
+
+.scale {
+    position: relative;
+}
+
+.bar-grey {
+    width: 100px;
+    height: 2px;
+    background-color: #91c92f;
+    position: relative;
+}
+
+.bar-green {
+    width: 201px;
+    height: 2px;
+    background-color: #dbdbdb;
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.toggle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.min {
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.max {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+
+}
+
+.point{
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    border-radius: 50%;
+}
+
+.cost-value{
+    
+}
+
+.scale-label {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: 20%;
+}
+.scale-input {
+}
+/*--------------стоимость (конец)------------- */
+/*--------------цвет (начало)------------- */
+
+.color {
+}
+
+.color p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.color-list {
+    margin-bottom: 40px;
+}
+.color-item {
+}
+
+.checkbox-input {
+     display: none;
+}
+
+.checkbox-label {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    padding-left: 40px;
+    
+    position: relative;
+}
+
+.checkbox-label::before{
+    content: "";
+    display: inline-block;
+    background: url(images/checkbox-off.svg);
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+}
+
+.checkbox-input:checked +.checkbox-label::before{
+    background: url(images/checkbox-on.svg);
+    width: 27px;
+    height: 23px;
+}
+/*--------------цвет (конец)------------- */
+/*--------------bluetooth (начало)------------- */
+
+.bluetooth {
+    margin-bottom: 50px;
+}
+.bluetooth p{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.bluetooth-list {
+}
+.bluetooth-item {
+}
+.radio-input {
+    display: none;
+}
+.radio-label {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+
+    position: relative;
+    padding-left: 40px;
+}
+
+.radio-label::before{
+    content: "";
+    display: inline-block;
+    background: url(images/radio-off.svg);
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.radio-input:checked +.radio-label::before{
+    background: url(images/radio-on.svg);
+}
+
+/*--------------bluetooth (конец)------------- */
+/*--------------кнопка  (начало)------------- */
+
+.show-btn{
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    position: relative;
+    z-index: 0;
+    display: block;
+    padding-left: 42px;
+}
+
+.show-btn::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 8px;
+    background-color: #f0c52e;
+
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    z-index: -1;
+}
+
+.show-btn:hover::before{
+    top: -10px;
+    height: 40px;
+    transition:all .1s linear;
+}
+
+
+
+/*--------------кнопка  (начало)------------- */
+/*--------------Фильтр (Конец)------------- */
+
+
+
+
+
+
 
 
 
