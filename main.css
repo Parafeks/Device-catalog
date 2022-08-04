@@ -254,7 +254,7 @@ legend {
 }
 
 .catalog-link{
-    position: relative;
+    /* position: relative; */
 }
 
 .catalog-link::after {
@@ -269,25 +269,24 @@ legend {
     opacity: 0.6;
 }
 
-.catalog-link:hover +.catalog-menu{
-    display: flex;
-}
-
-.catalog-menu:hover{
-    display: flex;
-}
-
-
 .catalog-menu{
     width: 1040px;
     z-index: 3;
     background-color: #f7e296;
 
     display: none;  
-    /* position: absolute;   */
+    position: absolute;  
 
     /* border: 1px solid rgb(243, 49, 6); */
 
+}
+
+.catalog-link:hover +.catalog-menu{
+    display: flex;
+}
+
+.catalog-menu:hover{
+    display: flex;
 }
 
 .submenu {
@@ -761,7 +760,7 @@ legend {
     width: 360px;
     margin-bottom: 75px;
 
-    /* border: 1px solid rgb(6, 243, 22); */
+    border: 1px solid rgb(6, 243, 22);
 }
 
 .maket-text {
