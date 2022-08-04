@@ -163,7 +163,7 @@ legend {
     margin: 0 auto;
     padding: 0 20px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }   
 .header{
@@ -341,10 +341,12 @@ legend {
 
 
 /*--------------MEIN (начало)------------- */
+.main {
+
+}
 /*--------------Крошки (начало)------------- */
 
-.main {
-}
+
 .crumbs {
     max-width: 1040px;
     margin: 0 auto;
@@ -389,11 +391,17 @@ legend {
 .crumbs-link {
 }
 /*--------------Крошки (конец)------------- */
+
 /*--------------Фильтр (начало)------------- */
+
+.main-block{
+    display: flex;
+}
+
 /*--------------стоимость (начало)------------- */
 
 
-.filtr-title h3{
+.filtr-title {
     font-family: Gilroy;
     font-size: 16px;
     font-weight: 800;
@@ -417,20 +425,19 @@ legend {
     height: 1286px;
 
     background: linear-gradient(
-    #dbdbdb 0%, #dbdbdb 5%,
-    #eeeeee 5%, #eeeeee 100%
+    #dbdbdb 0%, #dbdbdb 5.44%,
+    #eeeeee 5.44%, #eeeeee 100%
   );
 }
 
 .filtr-block{
-    /* width: 203px; */
     margin-left: 200px;
    
     /* border: 1px solid rgb(26, 6, 243); */
 }
 
 .filtr-title{
-    padding: 20px 0px 20px 0px;
+    padding: 25px 0px 0px 0px;
 }
 
 .line { 
@@ -664,16 +671,327 @@ legend {
 /*--------------Фильтр (Конец)------------- */
 
 
+/*--------------БЛОК Центральный (Начало)------------- */
+/*-------------- Центральный Хедер (Начало)------------- */
+
+.central-menu{
+    width: 973px;
+    height: 1286px;
+
+    background: linear-gradient(
+    #ebebeb 0%, #ebebeb 5.44%,
+    #ffffff 5.44%, #ffffff 100%
+    );
+    
+    /* border: 1px solid rgb(26, 6, 243); */
+}
+
+.central-container{
+    width: 834px;
+    padding-left: 74px;
+
+    /* border: 1px solid rgb(243, 113, 6); */
+}
+
+.sort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 25px;
+
+    /* border: 1px solid rgb(30, 27, 24); */
+
+}
+
+.sort h3{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    padding-right: 55px;
+}
+
+.sort-list {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+}
+
+.sort-item:not(:last-child) {
+    padding-right: 30px;
+}
+
+.sotr-link {
+}
+.arrow-list {
+    display: flex;
+    padding-left: 226px;
+}
+.arrow-item:first-child{
+    padding-right: 20px;
+}
+.arrow-link {
+}
+.arrow {
+}
+/*-------------- Центр (Начало)------------- */
+
+.catalog-container {
+    padding-top: 100px;
+}
+
+.maket-wrap {
+    /* border: 1px solid rgb(243, 6, 188); */
+
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.maket{
+    width: 360px;
+    margin-bottom: 75px;
+
+    /* border: 1px solid rgb(6, 243, 22); */
+}
+
+.maket-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.info-link {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.maket-text p{
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px; 
+}
+
+.maket-hov {
+    opacity: 0;
+    /* display: none; */
+    position: absolute;
+    top: 188px;
+    left: 74px;    
+}
+
+.maket-hov p {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 36px; 
+
+    padding-left: 32px;
+    padding-top: 20px;
+}
+.show-btn {
+}
+
+.cart-btn{
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    position: relative;
+    z-index: 0;
+    display: block;
+    padding-left: 42px;
+}
+
+.cart-btn::before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 8px;
+    background-color: #f0c52e;
+
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    z-index: -1;
+}
+
+.cart-btn:hover::before{
+    top: -10px;
+    height: 40px;
+    transition:all .1s linear;
+}
+
+.maket:hover +.maket-hov {
+    opacity: 1;
+}
+
+.maket:hover img{
+    opacity: .7;
+}
+
+.maket-hov:hover {
+    opacity: 1;
+}
 
 
 
+/*--------------Центр (Конец)------------- */
+
+/*--------------MEIN (конец)------------- */
 
 
+/*--------------Футер (Начало)------------- */
 
 
+.footer {
+    /* max-width: 1440px; */
+    color: #fff;
+    background-color: #464646;
+}
+.conteiner-footer {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 67px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    /* border: 2px solid rgb(255, 0, 166); */
+}
 
 
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 42px;
+}
+.f-logo-link:hover { 
+    opacity: 0.6;
+}
 
- /*--------------MEIN (конец)------------- */
+.f-logo-link:active { 
+    opacity: 0.3;
+}
+
+.f-logo-img {
+}
+
+.f-menu {
+    display: flex;
+}
+
+.f-menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.f-menu-link:not(:last-child){
+    margin-right: 43px;
+}
+
+.f-menu-link:hover >.f-menu-img{
+    opacity: .6;
+}
+.f-menu-link:hover >.f-menu-text{
+    opacity: 1;
+}
+
+.f-menu-link:active >.f-menu-img{
+    opacity: .3;
+}
+.f-menu-link:active >.f-menu-text{
+    opacity: .3;
+}
+
+.f-menu-img{
+}
+
+.f-menu-text {
+    margin-left: 12px;
+    color: #fff;
+    opacity: 0.7;
+}
 
 
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.adress {
+}
+
+.delivery-list {
+    display: flex;
+}
+
+.delivery-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.delivery-link {
+    color: #fff;
+}
+.delivery-link:hover {
+    opacity: 0.6;
+}
+.delivery-link:active {
+    opacity: 0.3;
+}
+
+
+.phone-number {
+}
+
+.footer-tree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-link{
+    opacity: 0.3;
+}
+.icon-link:hover {
+    opacity: 0.6;
+}
+.icon-link:active {
+    opacity: 0.1;
+}
+
+.icon-list {
+    display: flex;
+}
+
+
+.icon-item:not(:last-child) {
+    margin-right: 23px;
+}
+
+.icon-img {
+}
+.logo-html:hover {
+    opacity: 0.6;
+}
+.logo-html:active {
+    opacity: 0.3;
+}

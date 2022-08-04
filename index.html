@@ -82,100 +82,207 @@
         </div>
 
         
-        <div class="filtr-container">  
-            <div class="filtr-block">
-                <div class="filtr-title"><h3>Фильтр:</h3></div>
-                <div class="cost-container">
-                    <div class="line"></div>
-                    <div class="cost">
-                        <p>Стоимость</p>
-                        <div class="scale">
-                            <div class="bar-green"></div>
-                            <div class="bar-grey"></div>
-                            <div class="toggle min">
-                                <div class="point"></div>
-                            </div>
-                            <div class="toggle max"></div>
-                        </div>
-                        <div class="cost-value">
-                            <label class="scale-label">от
-                                <input type="text" class="scale-input" name="from-price" value="0">
-                            </label>
-                            <label class="scale-label">до
-                                <input type="text" class="scale-input" name="to-price" value="15 000">
-                            </label>
-                        </div>
+        <div class="main-block">
+            <div class="filtr-container">
+                <div class="filtr-block">
+                    <div class="filtr-title">
+                        <h3>Фильтр:</h3>
                     </div>
-                    <div class="line"></div>
-                    <div class="color">
-                        <p>Цвет</p>
-                        <ul class="color-list">
-                            <li class="color-item">
-                                <input class="checkbox-input" type="checkbox" name="check1" id="black" checked>
-                                <label for="black" class="checkbox-label">Черный</label>
-                            </li>
-                            <li class="color-item">
-                                <input class="checkbox-input" type="checkbox" name="check2" id="white" >
-                                <label for="white" class="checkbox-label">Белый</label>
-                            </li>
-                            <li class="color-item">
-                                <input class="checkbox-input" type="checkbox" name="check3" id="blue" checked>
-                                <label for="blue" class="checkbox-label">Синий</label>
-                            </li>
-                            <li class="color-item">
-                                <input class="checkbox-input" type="checkbox" name="check4" id="red" checked>
-                                <label for="red" class="checkbox-label">Красный</label>
-                            </li>
-                            <li class="color-item">
-                                <input class="checkbox-input" type="checkbox" name="check5" id="pink" >
-                                <label for="pink" class="checkbox-label">Розовый</label>
-                            </li>
+                    <div class="cost-container">
+                        <div class="line"></div>
+                        <div class="cost">
+                            <p>Стоимость</p>
+                            <div class="scale">
+                                <div class="bar-green"></div>
+                                <div class="bar-grey"></div>
+                                <div class="toggle min">
+                                    <div class="point"></div>
+                                </div>
+                                <div class="toggle max">
+                                    <div class="point"></div>
+                                </div>
+                            </div>
+                            <div class="cost-value">
+                                <label class="scale-label">от
+                                    <input type="text" class="scale-input" name="from-price" value="0">
+                                </label>
+                                <label class="scale-label">до
+                                    <input type="text" class="scale-input" name="to-price" value="15 000">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="color">
+                            <p>Цвет</p>
+                            <ul class="color-list">
+                                <li class="color-item">
+                                    <input class="checkbox-input" type="checkbox" name="check1" id="black" checked>
+                                    <label for="black" class="checkbox-label">Черный</label>
+                                </li>
+                                <li class="color-item">
+                                    <input class="checkbox-input" type="checkbox" name="check2" id="white" >
+                                    <label for="white" class="checkbox-label">Белый</label>
+                                </li>
+                                <li class="color-item">
+                                    <input class="checkbox-input" type="checkbox" name="check3" id="blue" checked>
+                                    <label for="blue" class="checkbox-label">Синий</label>
+                                </li>
+                                <li class="color-item">
+                                    <input class="checkbox-input" type="checkbox" name="check4" id="red" checked>
+                                    <label for="red" class="checkbox-label">Красный</label>
+                                </li>
+                                <li class="color-item">
+                                    <input class="checkbox-input" type="checkbox" name="check5" id="pink" >
+                                    <label for="pink" class="checkbox-label">Розовый</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="bluetooth">
+                            <p>Bluetooth</p>
+                            <ul class="bluetooth-list">
+                                <li class="bluetooth-item">
+                                    <input class="radio-input" type="radio" name="bluetooth" id="yes" checked>
+                                    <label class="radio-label" for="yes">Есть</label>
+                                </li>
+                                <li class="bluetooth-item">
+                                    <input class="radio-input" type="radio" name="bluetooth" id="no">
+                                    <label class="radio-label" for="no">Нет</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="show-btn">Показать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="central-menu">
+                <div class="central-container">
+                    <div class="sort">
+                        <h3>Сортировка:</h3>
+                        <ul class="sort-list">
+                            <li class="sort-item"><a href="#" class="sotr-link">По цене</a></li>
+                            <li class="sort-item"><a href="#" class="sotr-link">По типу</a></li>
+                            <li class="sort-item"><a href="#" class="sotr-link">По популярности</a></li>
                         </ul>
-                    </div>    
-                    <div class="line"></div>
-                    <div class="bluetooth">
-                        <p>Bluetooth</p>
-                        <ul class="bluetooth-list">
-                            <li class="bluetooth-item">
-                                <input class="radio-input" type="radio" name="bluetooth" id="yes" checked>
-                                <label class="radio-label" for="yes">Есть</label>
-                            </li>
-                            <li class="bluetooth-item">
-                                <input class="radio-input" type="radio" name="bluetooth" id="no">
-                                <label class="radio-label" for="no">Нет</label>
-                            </li>
+                        <ul class="arrow-list">
+                            <li class="arrow-item"><a href="#" class="arrow-link">
+                                <img src="images/arrow-up.svg" alt="Сортировка вниз" class="arrow">
+                            </a></li>
+                            <li class="arrow-item"><a href="#" class="arrow-link">
+                                <img src="images/arrow-down.svg" alt="Сортировка вверх" class="arrow">
+                            </a></li>
                         </ul>
                     </div>
 
-                    <a href="#" class="show-btn">Показать</a>
-                    
+                    <div class="catalog-container">
+                        <div class="maket-wrap">
+                            <div class="maket">  <!--1 макет -->
+                                <img src="images/item-1.png" alt="Селфи-палка"> <!-- может добавть в ссылку -->
+                                <div class="maket-text">
+                                    <a href="#" class="info-link">Любительская селфи-палка</a>
+                                    <p>500 грн</p>
+                                </div>
+                            </div>
+                            <div class="maket-hov">
+                                <a href="#" class="cart-btn">В корзину</a>
+                                <p>Добавить к сравнению</p>
+                            </div>
+                            <div class="maket">  <!--2 макет -->
+                                <img src="images/item-2.png" alt="Профессиональная селфи-палка">
+                                <div class="maket-text">
+                                    <a href="#" class="info-link">Профессиональная <br> селфи-палка</a>
+                                    <p>1 500 грн</p>
+                                </div>
+                            </div>
+                            <div class="maket-hov">
+                                <a href="#" class="cart-btn">В корзину</a>
+                                <p>Добавить к сравнению</p>
+                            </div>
+                            <div class="maket">  <!--3 макет -->
+                                <img src="images/item-3.png" alt="Непотопляемая селфи-палка"> 
+                                <div class="maket-text">
+                                    <a href="#" class="info-link">Непотопляемая селфи-палка</a>
+                                    <p>2 500 грн</p>
+                                </div>
+                            </div>
+                            <div class="maket-hov">
+                                <a href="#" class="cart-btn">В корзину</a>
+                                <p>Добавить к сравнению</p>
+                            </div>
+                            <div class="maket">  <!--4 макет -->
+                                <img src="images/item-4.png" alt="Селфи-палка «Следуй за мной»"> 
+                                <div class="maket-text">
+                                    <a href="#" class="info-link">Селфи-палка «Следуй за <br> мной»</a>
+                                    <p>4 900 грн</p>
+                                </div>
+                            </div>
+                            <div class="maket-hov">
+                                <a href="#" class="cart-btn">В корзину</a>
+                                <p>Добавить к сравнению</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>    
+    </main>
+
+    <footer class="footer">   <!--  цвет  -->
+        <div class="conteiner-footer">  <!--  ограниченный размер для контейнера, для содержимого -->
+
+            <div class="footer-one">  <!--  1 часть  -->
+                <a href="#" class="f-logo-link"><img src="images/logo-yellow-footer.png" alt="Логотип Device" class="f-logo-img"></a>
+                <div class="f-menu OpenSans-light">
+                    <a href="#" class="f-menu-link">
+                        <img src="images/user-yellow.png" alt="Войти в аккаунт" class="f-menu-img">
+                        <p class="f-menu-text ">Войти</p>
+                    </a>
+                    <a href="#" class="f-menu-link">
+                        <img src="images/compare-yellow.png" alt="Сравнить" class="f-menu-img">
+                        <p class="f-menu-text">Сравнить</p>
+                    </a>
+                    <a href="#" class="f-menu-link">
+                        <img src="images/cart-yellow.png" alt="Корзина" class="f-menu-img">
+                        <p class="f-menu-text">Корзина</p>
+                    </a>
 
                 </div>
             </div>
 
+            <div class="footer-two">  <!--  2 часть  -->
+                <p class="adress OpenSans-light">г. Киев, ул. Брожка, 15</p>
+                <ul class="delivery-list">
+                    <li class="delivery-item">
+                        <a href="#" class="delivery-link Gilroy-extrabold">Доставка</a>
+                    </li>
+                    <li class="delivery-item">
+                        <a href="#" class="delivery-link Gilroy-extrabold">Гарантия</a>
+                    </li>
+                    <li class="delivery-item">
+                        <a href="#" class="delivery-link Gilroy-extrabold">Контакты</a>
+                    </li>
+                </ul>
+                <p class="phone-number OpenSans-light">Тел.: +38 (095) 495-95-95</p>
+            </div>
+
+            <div class="footer-tree">  <!--  3 часть  -->
+                <img class="line-img" src="images/line.png" alt="Line" >
+                <ul class="icon-list">
+                    <li class="icon-item">
+                        <a href="#" class="icon-link"><img src="images/FB-logo.png" alt="логотип Фейсбук" class="icon-img"></a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="#" class="icon-link"><img src="images/Insta-logo.png" alt="логотип Инстаграм" class="icon-img"></a>
+                    </li>
+                    <li class="icon-item">
+                        <a href="#" class="icon-link"><img src="images/Twitter-logo.png" alt="логотип Твиттер" class="icon-img"></a>
+                    </li>
+                </ul>
+                <img src="images/logo-html.png" alt="" class="logo-html">
+            </div> 
         </div>
-
-
-        <!-- <div class="sort">
-            <h3>Сортировка:</h3>
-
-            <ul class="sort-list">
-                <li class="sort-item"><a href="#" class="sotr-link">По цене</a></li>
-                <li class="sort-item"><a href="#" class="sotr-link">По типу</a></li>
-                <li class="sort-item"><a href="#" class="sotr-link">По популярности</a></li>
-            </ul>
-
-            <ul class="arrow-list">
-                <li class="arrow-item"><a href="#" class="arrow-link">
-                    <img src="images/arrow-up.svg" alt="Сортировка вниз" class="arrow">
-                </a></li>
-                <li class="arrow-item"><a href="#" class="arrow-link">
-                    <img src="images/arrow-down.svg" alt="Сортировка вверх" class="arrow">
-                </a></li>
-            </ul>
-        </div> -->
-
-    </main>
+    </div>
     
 </body>
 </html>
