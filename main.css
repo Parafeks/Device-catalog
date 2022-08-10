@@ -356,18 +356,18 @@ legend {
 .crumbs {
     max-width: 1040px;
     margin: 0 auto;
-    /* padding-top: 0 px; */
     padding-bottom: 45px; 
 
     /* border: 1px solid rgb(83, 232, 37); */
-
 }
+
 .title {
     font-family: "Gilroy";
     font-weight: 800;
     font-size: 47px;
     line-height: 48px;
 }
+
 .crimbs-list {
     font-family: "Open Sans";
     font-weight: 300;
@@ -472,6 +472,7 @@ legend {
 
 .scale {
     position: relative;
+
 }
 
 .bar-grey {
@@ -524,6 +525,8 @@ legend {
 
 .cost-value{
     display: flex;
+    padding-top: 5px;
+    padding-bottom: 40px;
 }
 
 .scale-label {
@@ -537,6 +540,7 @@ legend {
     margin-right: 10px;
 }
 .scale-input {
+    width: 79px;
 }
 /*--------------стоимость (конец)------------- */
 /*--------------цвет (начало)------------- */
