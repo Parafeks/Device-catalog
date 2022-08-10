@@ -278,17 +278,19 @@ legend {
 
 .catalog-menu:hover{
     display: flex;
-    position: ;
 }
 
 
 .catalog-menu{
-    width: 1040px;
+    width: 1140px;
     z-index: 3;
     background-color: #f7e296;
 
     display: none;  
-    /* position: absolute;   */
+    position: absolute; 
+    top: 20px;
+    left: -50px; 
+    padding-left: 50px;
 
     /* border: 1px solid rgb(243, 49, 6); */
 
@@ -300,7 +302,7 @@ legend {
     flex-direction: column;
     
     width: 593px;
-    height: 135px;
+    height: 160px;
 
     padding-top: 25px;
 }
@@ -354,7 +356,7 @@ legend {
 .crumbs {
     max-width: 1040px;
     margin: 0 auto;
-    padding-top: 50px;
+    /* padding-top: 0 px; */
     padding-bottom: 45px; 
 
     /* border: 1px solid rgb(83, 232, 37); */
