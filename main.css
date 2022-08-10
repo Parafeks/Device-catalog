@@ -1,10 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
 @font-face {
     font-family: Open Sans, sans-serif;
     src: url(fonts/opensans-light.woff2),
     url(fonts/opensans-light.woff);
     font-style: normal;         /*каким образом шрифт должен быть стилизирован*/
-    font-weight: 400;
+    font-weight: 300;
     font-display: swap;  /*swap сообщает браузеру, что текст, использующий шрифт, должен немедленно отображаться с использованием системного шрифта. Когда пользовательский шрифт готов, он заменяет системный шрифт*/
 }
 @font-face {
@@ -254,7 +257,7 @@ legend {
 }
 
 .catalog-link{
-    /* position: relative; */
+    position: relative;
 }
 
 .catalog-link::after {
@@ -269,24 +272,26 @@ legend {
     opacity: 0.6;
 }
 
-.catalog-menu{
-    width: 1040px;
-    z-index: 3;
-    background-color: #f7e296;
-
-    display: none;  
-    position: absolute;  
-
-    /* border: 1px solid rgb(243, 49, 6); */
-
-}
-
 .catalog-link:hover +.catalog-menu{
     display: flex;
 }
 
 .catalog-menu:hover{
     display: flex;
+    position: ;
+}
+
+
+.catalog-menu{
+    width: 1040px;
+    z-index: 3;
+    background-color: #f7e296;
+
+    display: none;  
+    /* position: absolute;   */
+
+    /* border: 1px solid rgb(243, 49, 6); */
+
 }
 
 .submenu {
@@ -516,7 +521,7 @@ legend {
 }
 
 .cost-value{
-    
+    display: flex;
 }
 
 .scale-label {
@@ -525,6 +530,9 @@ legend {
     font-weight: 300;
     line-height: 24px;
     opacity: 20%;
+
+    display: flex;
+    margin-right: 10px;
 }
 .scale-input {
 }
@@ -560,6 +568,8 @@ legend {
     font-weight: 300;
     line-height: 40px;
     padding-left: 40px;
+
+    user-select:none; /* запретить выделять текст пользователю */
     
     position: relative;
 }
@@ -610,6 +620,8 @@ legend {
 
     position: relative;
     padding-left: 40px;
+
+    user-select: none;
 }
 
 .radio-label::before{
@@ -739,7 +751,10 @@ legend {
 }
 .arrow {
 }
+
+
 /*-------------- Центр (Начало)------------- */
+
 
 .catalog-container {
     padding-top: 100px;
@@ -760,7 +775,7 @@ legend {
     width: 360px;
     margin-bottom: 75px;
 
-    border: 1px solid rgb(6, 243, 22);
+    /* border: 1px solid rgb(6, 243, 22); */
 }
 
 .maket-text {
@@ -784,8 +799,8 @@ legend {
 }
 
 .maket-hov {
-    opacity: 0;
-    /* display: none; */
+    /* opacity: 0; */
+    display: none;
     position: absolute;
     top: 188px;
     left: 74px;    
@@ -836,17 +851,27 @@ legend {
     transition:all .1s linear;
 }
 
-.maket:hover +.maket-hov {
+
+/* .maket:hover +.maket-hov {
     opacity: 1;
 }
 
-.maket:hover img{
+.maket:hover .maket-img{
     opacity: .7;
 }
 
-.maket-hov:hover {
-    opacity: 1;
+.maket-hov:hover .maket-img {
+    opacity: .7;
+} */
+
+.maket:hover .maket-hov {
+    display: block;
 }
+
+.maket:hover .maket-img {
+    opacity: .7;
+}
+
 
 
 
