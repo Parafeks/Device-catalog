@@ -58,6 +58,10 @@ a:active {
 	/* outline: none;*/
 }
 
+.body{
+    font-family: Open Sans, sans-serif;
+}
+
 /* Links */
 
 a, a:link, a:visited  {
@@ -428,7 +432,7 @@ legend {
 
 .filtr-container {
     width: 468px;
-    height: 1286px;
+    height: 1360px;
 
     background: linear-gradient(
     #dbdbdb 0%, #dbdbdb 5.44%,
@@ -870,22 +874,106 @@ legend {
     opacity: .7;
 } */
 
-.maket:hover .maket-hov {
+
+.maket-link:hover +.maket-hov {
     display: block;
 }
 
-.maket:hover .maket-img {
+.maket-link:hover{
+    opacity: .7;
+}
+
+.maket-hov:hover{
+    display: block;
+}
+
+.maket-hov:hover .maket-link{
     opacity: .7;
 }
 
 
 
+/*--------------Центр (конец)------------- */
+/*--------------Пагинация (начало)------------- */
 
-/*--------------Центр (Конец)------------- */
+.pagination{
+    width: 760px;
+    height: 70px;
+    background-color: #ebebeb;
+
+    position: relative;
+    top: -30px;
+    left: 0px;
+}
+
+.pagination{
+    font-family: "Gilroy";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 30px 0px 30px ; */
+}
+
+.pagination-list{
+    display: flex;
+}
+
+.pagination-item a{
+    color: #bababa;
+}
+
+.current a{
+    color: black;     /* почему не работает? */
+}
+
+.pagination-item:not(:last-child){
+    padding-right: 30px;
+}
+
+.pagination-item a:hover{
+    color: #b0b0b0;
+}
+
+.pagination-item a:active{
+    color: black;
+}
+
+.back, .forward{
+    padding: 25px 30px;
+}
+
+.back:hover{
+    width: 125px;
+    height: 70px;
+    background-color: #d9d9d9;
+}
+
+.back:active{
+    color: #acacac;
+}
+
+.forward:active{
+    color: #acacac;
+}
+
+.forward:hover{
+    width: 125px;
+    height: 70px;
+    background-color: #d9d9d9;
+}
+
+
+
+
+
 
 /*--------------MEIN (конец)------------- */
-
-
 /*--------------Футер (Начало)------------- */
 
 
@@ -893,6 +981,7 @@ legend {
     /* max-width: 1440px; */
     color: #fff;
     background-color: #464646;
+   
 }
 .conteiner-footer {
     max-width: 1190px;
