@@ -59,7 +59,7 @@ a:active {
 }
 
 .body{
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Links */
@@ -133,19 +133,17 @@ legend {
 
 /*--------------Обнуление стилей (конец)/*-------------- */
 
- /*--------------Шрифты (начало)-------------- */
-
- /*--------------шрифты-------------- */
 
 
- .search-input, .search-button, .user-account, .user-list{
+
+.search-input, .search-button, .user-account, .user-list{
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
 }
 
- .submenu{
+.submenu{
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 15px;
@@ -159,27 +157,21 @@ legend {
     text-transform: uppercase;
     letter-spacing: .2em;
 }
-  /*--------------Шрифты (конец)-------------- */
 
 
 
- /*--------------ХЕДЕР (начало)-------------- */
+/*--------------ХЕДЕР (начало)-------------- */
  
 .container{
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 20px;
-
-    /* border: 1px solid black; */
-
 }   
+
 .header{
     min-height: 185px;
     background-color: #f7e296;
     margin: 40px 0px 45px 0px;
-
-    /* border: 1px solid rgb(237, 43, 43); */
-
 }
 
 .header-container {   
@@ -188,9 +180,6 @@ legend {
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 45px; 
-
-    /* border: 1px solid rgb(230, 50, 206); */
-
 }
 
 .header-logo_link {
@@ -216,8 +205,7 @@ legend {
 /*--------------Поиск (начало)-------------- */
 
 .search{
-    border: 1px solid black;
-
+    /* border: 1px solid black; */
 }
 .search-label{
     display: inline-block;
@@ -225,7 +213,66 @@ legend {
     width: 16px;
     height: 16px;
     background-repeat:no-repeat;
+    padding-right: -10px;
 }
+
+.search-input{
+    /* border: 1px solid rgb(223, 8, 155); */
+    width:265px;
+    position:relative;
+    padding:8px 0 8px 20px;
+    line-height:30px;
+    /* background-color:transparent; */
+    /* border:none;  */
+    border-bottom:2px solid transparent
+}
+
+.search-input:focus{
+    /* color:#000; */
+    border-bottom-color:#000;
+}
+
+.search-input:focus +.search-button{
+    visibility: visible;
+}
+
+
+
+
+.search-input::placeholder{
+    color: rgba(0,0,0,.3)
+}
+
+.search-input:hover::placeholder{
+    color: #8d8d8d;
+}
+
+.search-button{
+    padding:8px 18px;
+    line-height:30px;
+    letter-spacing:.01em;
+    text-transform:none;
+    font-weight:400;
+    color:#000;
+    background-color:transparent;
+    border:2px solid #000;
+    visibility:hidden
+}
+
+.search-button:hover{
+    color: white;
+    background-color: #000;
+}
+
+.search-button:active{
+    color: #6a6a6a;
+}
+
+
+
+
+
+
 
 
 /*--------------Поиск (конец)-------------- */
@@ -234,14 +281,18 @@ legend {
 .user-account {
     display: flex;
     align-items: center;
+    /* padding-left: 100px; */
 }
 
 .user-text{
     padding-left: 10px;
 }
+
 .user-list {
     display: flex;
+    align-items: center;
 }
+
 .user-list li:nth-child(1){
     margin-right: 40px;
 }
@@ -254,7 +305,7 @@ legend {
 
 
 
- /*--------------Меню с Каталогом товаров (начало)-------------- */
+/*--------------Меню с Каталогом товаров (начало)-------------- */
 
 .navigation {
    position: relative;
@@ -435,8 +486,8 @@ legend {
     height: 1360px;
 
     background: linear-gradient(
-    #dbdbdb 0%, #dbdbdb 5.44%,
-    #eeeeee 5.44%, #eeeeee 100%
+    #dbdbdb 0%, #dbdbdb 5.15%,
+    #eeeeee 5.15%, #eeeeee 100%
   );
 }
 
@@ -976,6 +1027,29 @@ legend {
 /*--------------MEIN (конец)------------- */
 /*--------------Футер (Начало)------------- */
 
+.Gilroy-extrabold{
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .2em;
+    color: black;
+}
+
+.Gilroy-extrabold24{
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+.OpenSans-light{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+}
 
 .footer {
     /* max-width: 1440px; */
