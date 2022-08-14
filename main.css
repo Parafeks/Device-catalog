@@ -68,7 +68,7 @@ a, a:link, a:visited  {
     /* color: inherit; */
     text-decoration: none;
     /* display: inline-block; */
-    color: black;
+    color: inherit;
 }
 
 a:hover  {
@@ -130,6 +130,13 @@ label {
 legend {
 	display: block;
 }
+
+  
+/* Убираем крестик стирания текста внутри формы для поиска */
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
 
 /*--------------Обнуление стилей (конец)/*-------------- */
 
@@ -224,7 +231,8 @@ legend {
     line-height:30px;
     /* background-color:transparent; */
     /* border:none;  */
-    border-bottom:2px solid transparent
+    border-bottom:2px solid transparent;
+    margin: -15px;
 }
 
 .search-input:focus{
@@ -235,8 +243,6 @@ legend {
 .search-input:focus +.search-button{
     visibility: visible;
 }
-
-
 
 
 .search-input::placeholder{
@@ -256,7 +262,7 @@ legend {
     color:#000;
     background-color:transparent;
     border:2px solid #000;
-    visibility:hidden
+    visibility:hidden;
 }
 
 .search-button:hover{
@@ -267,7 +273,6 @@ legend {
 .search-button:active{
     color: #6a6a6a;
 }
-
 
 
 
@@ -737,6 +742,10 @@ legend {
     transition:all .1s linear;
 }
 
+.show-btn:active{
+    color: #be9c22;
+}
+
 
 
 /*--------------кнопка  (начало)------------- */
@@ -821,7 +830,7 @@ legend {
     padding-top: 100px;
 }
 
-.maket-wrap {
+.maket-wrap{
     /* border: 1px solid rgb(243, 6, 188); */
 
     position: relative;
@@ -835,6 +844,7 @@ legend {
 .maket{
     width: 360px;
     margin-bottom: 75px;
+    position: relative;
 
     /* border: 1px solid rgb(6, 243, 22); */
 }
@@ -867,17 +877,48 @@ legend {
     left: 74px;    
 }
 
-.maket-hov p {
+.compare {
     font-family: Open Sans;
     font-size: 13px;
     font-weight: 300;
     line-height: 36px; 
+    color: #a3a3a3;
+
 
     padding-left: 32px;
     padding-top: 20px;
 }
-.show-btn {
+
+.compare:hover {
+    color: black;
 }
+
+.compare:active {
+    color: #dddddd;
+}
+
+
+
+.maket-link:hover +.maket-hov {
+    display: block;
+    /* opacity: 1; */
+}
+
+.maket-link:hover{
+    opacity: .7;
+}
+
+.maket-hov:hover{
+    display: block;
+}
+
+
+/* .maket-hov:hover .maket-link{
+    opacity: .7;
+} */
+
+
+
 
 .cart-btn{
     font-family: Gilroy;
@@ -891,6 +932,7 @@ legend {
     z-index: 0;
     display: block;
     padding-left: 42px;
+    padding-bottom: 20px;
 }
 
 .cart-btn::before{
@@ -912,35 +954,12 @@ legend {
     transition:all .1s linear;
 }
 
-
-/* .maket:hover +.maket-hov {
-    opacity: 1;
+.cart-btn:active{
+    color: #be9c22;
 }
-
-.maket:hover .maket-img{
-    opacity: .7;
-}
-
-.maket-hov:hover .maket-img {
-    opacity: .7;
-} */
+__
 
 
-.maket-link:hover +.maket-hov {
-    display: block;
-}
-
-.maket-link:hover{
-    opacity: .7;
-}
-
-.maket-hov:hover{
-    display: block;
-}
-
-.maket-hov:hover .maket-link{
-    opacity: .7;
-}
 
 
 
@@ -1018,7 +1037,6 @@ legend {
     height: 70px;
     background-color: #d9d9d9;
 }
-
 
 
 
@@ -1136,6 +1154,8 @@ legend {
 .delivery-list {
     display: flex;
 }
+
+
 
 .delivery-item:not(:last-child) {
     margin-right: 40px;
