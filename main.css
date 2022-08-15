@@ -408,6 +408,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 /*--------------MEIN (начало)------------- */
 .main {
+    /* margin: 0 auto; */
 
 }
 /*--------------Крошки (начало)------------- */
@@ -957,14 +958,7 @@ input::-webkit-search-results-decoration { display: none; }
 .cart-btn:active{
     color: #be9c22;
 }
-__
 
-
-
-
-
-/*--------------Центр (конец)------------- */
-/*--------------Пагинация (начало)------------- */
 
 .pagination{
     width: 760px;
@@ -989,6 +983,8 @@ __
     align-items: center;
     /* padding: 0px 30px 0px 30px ; */
 }
+
+
 
 .pagination-list{
     display: flex;
