@@ -232,7 +232,7 @@ input::-webkit-search-results-decoration { display: none; }
     /* background-color:transparent; */
     /* border:none;  */
     border-bottom:2px solid transparent;
-    margin: -15px;
+    margin: -5px;
 }
 
 .search-input:focus{
@@ -263,7 +263,7 @@ input::-webkit-search-results-decoration { display: none; }
     color:#000;
     background-color:transparent;
     border:2px solid #000;
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
 .search-button:hover{
