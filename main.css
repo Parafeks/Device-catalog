@@ -515,6 +515,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .main-block{
     display: flex;
+    justify-content: center;
 }
 
 /*--------------стоимость (начало)------------- */
@@ -678,7 +679,7 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 .checkbox-input {
-     display: none;
+    display: none;
 }
 
 .checkbox-label {
@@ -710,10 +711,21 @@ input::-webkit-search-results-decoration { display: none; }
     height: 23px;
 }
 
-.checkbox-input:hover:checked +.checkbox-label{
+.checkbox-input:hover:checked +.checkbox-label::before{
     opacity: .6;
 }
 
+.checkbox-input:active:checked +.checkbox-label::before{
+    opacity: 1;
+}
+
+.checkbox-label:hover:before {
+    opacity: .6;
+}
+
+.checkbox-label:active:before {
+    opacity: 1;
+}
 
 
 /*--------------цвет (конец)------------- */
@@ -765,6 +777,24 @@ input::-webkit-search-results-decoration { display: none; }
 .radio-input:checked +.radio-label::before{
     background: url(images/radio-on.svg);
 }
+
+.radio-input:hover:checked +.radio-label::before{
+    opacity: .6;
+}
+
+.radio-input:active:checked +.radio-label::before{
+    opacity: 1;
+}
+
+.radio-label:hover::before{
+    opacity: .6;
+}
+
+.radio-label:active::before{
+    opacity: 1;
+}
+
+
 
 /*--------------bluetooth (конец)------------- */
 /*--------------кнопка  (начало)------------- */
@@ -953,7 +983,6 @@ input::-webkit-search-results-decoration { display: none; }
 
 
 .maket-hov {
-    /* opacity: 0; */
     display: none;
     position: absolute;
     top: 188px;
@@ -973,18 +1002,14 @@ input::-webkit-search-results-decoration { display: none; }
 
 .compare:hover {
     color: rgb(0, 0, 0, 1);
-    border: 1 solid black;
 }
 
 .compare:active {
     color: rgb(0, 0, 0, .2);
 }
 
-
-
 .maket-link:hover +.maket-hov {
     display: block;
-    /* opacity: 1; */
 }
 
 .maket-link:hover{
@@ -999,8 +1024,6 @@ input::-webkit-search-results-decoration { display: none; }
 .maket-hov:hover .maket-link{
     opacity: .7;
 }
-
-
 
 .cart-btn{
     font-family: Gilroy;
