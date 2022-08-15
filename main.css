@@ -253,6 +253,7 @@ input::-webkit-search-results-decoration { display: none; }
     color: #8d8d8d;
 }
 
+
 .search-button{
     padding:8px 18px;
     line-height:30px;
@@ -288,6 +289,29 @@ input::-webkit-search-results-decoration { display: none; }
     align-items: center;
     /* padding-left: 100px; */
 }
+
+.user-account:hover {
+    color:rgba(0,0,0,.6);
+}
+
+.user-account:active{
+    opacity: .5;
+}
+
+
+.user-link:hover {
+    color:rgba(0,0,0,.6);
+}
+
+.user-link:active{
+    color:rgba(0,0,0,.3)
+}
+
+.user-link:active{
+    opacity: .5;
+}
+
+
 
 .user-text{
     padding-left: 10px;
@@ -331,6 +355,17 @@ input::-webkit-search-results-decoration { display: none; }
 
     opacity: 0.6;
 }
+
+.catalog-link:hover{
+    color:rgba(0,0,0,.6);
+}
+
+.catalog-link:active{
+    color:rgba(0,0,0,.3)
+}
+
+
+
 
 .catalog-link:hover +.catalog-menu{
     display: flex;
@@ -380,7 +415,12 @@ input::-webkit-search-results-decoration { display: none; }
     opacity: 0;
 }
 
-.submenu-link {
+.submenu-link:hover {
+    color:rgba(0,0,0,.6);
+}
+
+.submenu-link:active {
+    color:rgba(0,0,0,.3)
 }
 
 .navigation-list {
@@ -395,8 +435,14 @@ input::-webkit-search-results-decoration { display: none; }
     margin-right: 40px;
 }
 
-.nav-link {
+.nav-link:hover, .navigation-contacts:hover {
+    color:rgba(0,0,0,.6);
 }
+
+.nav-link:active, .navigation-contacts:active {
+    color:rgba(0,0,0,.3)
+}
+
 .navigation-contacts {
     position: absolute;
     top: 0px;
@@ -409,7 +455,6 @@ input::-webkit-search-results-decoration { display: none; }
 /*--------------MEIN (начало)------------- */
 .main {
     /* margin: 0 auto; */
-
 }
 /*--------------Крошки (начало)------------- */
 
@@ -441,7 +486,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .crumbs-item{
     margin-right: 20px;
-    opacity: .3;
+    color:rgba(0,0,0,.3);
 }
 
 .crumbs-item:not(:last-child):after{
@@ -455,8 +500,15 @@ input::-webkit-search-results-decoration { display: none; }
 
     opacity: 1;
 }
-.crumbs-link {
+.crumbs-link:hover{
+    color:rgba(0,0,0,.6);
 }
+
+.crumbs-link:active{
+    color:rgba(0,0,0,.2);
+}
+
+
 /*--------------Крошки (конец)------------- */
 
 /*--------------Фильтр (начало)------------- */
@@ -657,6 +709,13 @@ input::-webkit-search-results-decoration { display: none; }
     width: 27px;
     height: 23px;
 }
+
+.checkbox-input:hover:checked +.checkbox-label{
+    opacity: .6;
+}
+
+
+
 /*--------------цвет (конец)------------- */
 /*--------------bluetooth (начало)------------- */
 
@@ -809,8 +868,19 @@ input::-webkit-search-results-decoration { display: none; }
     padding-right: 30px;
 }
 
-.sotr-link {
+.sort-item {
+    color: rgba(0,0,0,.3);
 }
+
+.sort-item:hover {
+    color: rgba(0,0,0,.6);
+}
+
+.sort-item:active {
+    color: rgba(0,0,0,1);
+}
+
+
 .arrow-list {
     display: flex;
     padding-left: 226px;
@@ -820,7 +890,17 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .arrow-link {
 }
+
 .arrow {
+    opacity: .2;
+}
+
+.arrow:hover {
+    opacity: .4;
+}
+
+.arrow:active {
+    opacity: 1;
 }
 
 
@@ -870,6 +950,8 @@ input::-webkit-search-results-decoration { display: none; }
     line-height: 24px; 
 }
 
+
+
 .maket-hov {
     /* opacity: 0; */
     display: none;
@@ -883,19 +965,19 @@ input::-webkit-search-results-decoration { display: none; }
     font-size: 13px;
     font-weight: 300;
     line-height: 36px; 
-    color: #a3a3a3;
-
+    color: rgb(0, 0, 0, .5);
 
     padding-left: 32px;
     padding-top: 20px;
 }
 
 .compare:hover {
-    color: black;
+    color: rgb(0, 0, 0, 1);
+    border: 1 solid black;
 }
 
 .compare:active {
-    color: #dddddd;
+    color: rgb(0, 0, 0, .2);
 }
 
 
@@ -914,10 +996,9 @@ input::-webkit-search-results-decoration { display: none; }
 }
 
 
-/* .maket-hov:hover .maket-link{
+.maket-hov:hover .maket-link{
     opacity: .7;
-} */
-
+}
 
 
 
